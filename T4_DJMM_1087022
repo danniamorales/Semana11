@@ -1,0 +1,54 @@
+﻿using System;
+
+namespace T4_DJMM_1087022
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int largo = 0, SUMA = 0, SUMA2 = 0;
+            Console.WriteLine("Ingrese la cantidad de numero que quiere ingresar: ");
+            largo = int.Parse(Console.ReadLine());
+            int[] arreglo = new int[largo];
+
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                Console.WriteLine("Ingredar un numero: ");
+                arreglo[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                if (arreglo[i] % 2 == 0)
+                {
+                    SUMA += arreglo[i];
+                }
+                else
+                {
+                    SUMA2 += arreglo[i];
+                }
+            }
+
+            Console.WriteLine("La suma par es: " + SUMA);
+            Console.WriteLine("La suma impar es: " + SUMA2);
+
+            Console.WriteLine();
+
+            string Palabra;
+            Console.WriteLine("Ingrese una palabra: ");
+            Palabra = Console.ReadLine();
+
+            for (int i = Palabra.Length = 1; i >= 0; i++)
+            {
+                Console.Write(Palabra[i]);
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+
